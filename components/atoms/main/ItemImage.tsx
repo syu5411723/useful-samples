@@ -1,9 +1,20 @@
-﻿import React from 'react'
+﻿import { VFC } from 'react'
+import Image from "next/image"
+import styled from 'styled-components'
+import { motion } from 'framer-motion'
 
-export const ItemImage = () => {
+type Props = {
+    img: string
+}
+
+const Wrapper = styled(motion.div)``
+
+
+
+export const ItemImage: VFC<Props> = ({img}) => {
     return (
-        <div>
-            
-        </div>
+        <Wrapper>
+            <Image src={img} layout="fill" objectFit='cover' />
+        </Wrapper>
     )
 }
