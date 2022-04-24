@@ -1,6 +1,7 @@
 ﻿import React from 'react'
-import {motion} from 'framer-motion'
+import { motion } from 'framer-motion'
 import styled from 'styled-components'
+import { MenuBgContent } from '../atoms/MenuBgContent'
 
 
 const Container = styled(motion.div)`
@@ -13,18 +14,18 @@ const Container = styled(motion.div)`
     background-color: rgb(255,188,112);
 `
 const containerV = {
-    closed:{x:"400px", },
-    open:{x:"0px", transition:{duration:0.3}}
+    closed: { x: "400px", },
+    open: { x: "0px", transition: { duration: 0.3 } }
 }
 
 
-export const MenuBG = () => {
+export const MenuBG = ({ isOpen }) => {
     return (
         <Container
             variants={containerV}
             animate={isOpen ? "open" : "closed"}
         >
-            
+            <MenuBgContent isOpen={isOpen} />
         </Container>
     )
 }

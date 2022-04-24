@@ -30,16 +30,14 @@ const line03V = {
 const transition = { transition: { duration: 0.5 } }
 
 
-export const MenuToggle = () => {
-    const [isOpen, setOpen] = useState(false)
-    const toggle = () => { setOpen(!isOpen) }
+export const MenuToggle = ({isOpen, toggle}) => {
+
     return (
         <LineInner onClick={toggle}>
             <Line
                 variants={line01V}
                 initial={false}
                 animate={isOpen ? "open" : "closed"}
-            // transition={transition}
             />
             <Line
                 variants={line02V}
@@ -50,7 +48,6 @@ export const MenuToggle = () => {
                 variants={line03V}
                 initial={false}
                 animate={isOpen ? "open" : "closed"}
-            // transition={transition}
             />
         </LineInner>
     )
