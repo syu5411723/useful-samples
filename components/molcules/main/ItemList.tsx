@@ -8,8 +8,7 @@ const Container = styled.div``
 export const ItemList = () => {
     return (
         <Container>
-
-
+            {}
         </Container>
     )
 }
