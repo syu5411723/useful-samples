@@ -5,10 +5,12 @@ import styled from 'styled-components'
 
 const Data = [
     {
+        id: '1',
         text: "1",
         link: "/",
     },
     {
+        id: "2",
         text: "2",
         link: "/",
     }
@@ -40,6 +42,7 @@ export const MenuBgContent = ({ isOpen }) => {
             >
                 {Data.map(item => (
                     <MenuItem
+                        key={item.id}
                         variants={itemV}
                     >
                         {/* <Links to={item.link}> */}

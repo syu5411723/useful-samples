@@ -5,10 +5,10 @@ const Container = styled.div``
 
 
 
-export const ItemList = () => {
+export const ItemList = ({data}) => {
     return (
         <Container>
-            {}
+            {/* {data.title} */}
         </Container>
     )
 }
