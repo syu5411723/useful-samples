@@ -14,7 +14,7 @@ const Wrapper = styled(motion.div)``
 export const ItemImage: VFC<Props> = ({img}) => {
     return (
         <Wrapper>
-            <Image src={img} layout="fill" objectFit='cover' />
+            {/* <Image src={img} layout="fill" objectFit='cover' /> */}
         </Wrapper>
     )
 }
