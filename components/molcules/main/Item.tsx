@@ -5,6 +5,7 @@ import { ItemImage } from '../../atoms/main/ItemImage'
 
 const Wrapper = styled.div`
     width:90%;
+    background-color:#202020;
 `
 const Inner = styled.div`
     padding:2%;

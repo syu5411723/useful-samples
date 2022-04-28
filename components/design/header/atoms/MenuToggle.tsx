@@ -2,7 +2,7 @@
 import { useState } from 'react'
 import styled from 'styled-components'
 
-const LineInner = styled(motion.div)`
+const LineInner = styled.div`
     height:25px;
     display:flex;
     flex-direction:column;
