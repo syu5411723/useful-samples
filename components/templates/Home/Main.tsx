@@ -1,6 +1,6 @@
 ﻿
 import styled from 'styled-components'
-import { ItemList } from '../../molcules/main/ItemList'
+import { Item } from '../../molcules/main/Item'
 
 
 const PostData = [
@@ -8,12 +8,27 @@ const PostData = [
         id: "1",
         title: "1",
         text: "1",
-        image: "",
+        img: "/",
+        date: "2022"
+    },
+    {
+        id: "1",
+        title: "1",
+        text: "1",
+        img: "/",
+        date: "2022"
     },
 ]
 
-const Container = styled.div``
-const ListWrapper = styled.div``
+const Container = styled.div`
+    display:flex;
+    justify-content:center;
+`
+const ListWrapper = styled.div`
+    width: 80%;
+    display:flex;
+    justify-content:space-between;
+`
 
 export const Main = () => {
 
@@ -22,7 +37,7 @@ export const Main = () => {
             <ListWrapper>
                 {PostData.map(data => (
                     <div key={data.id}>
-                        <ItemList data={data} />
+                        <Item data={data} />
                     </div>
                 ))}
             </ListWrapper>
