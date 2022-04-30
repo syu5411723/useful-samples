@@ -1,15 +1,8 @@
 ﻿import React from 'react'
 import { createContext } from 'react'
-const PostData = [
-    {
-        id: '1',
-        image: "tetete",
-    },
-    {
-        id: '2',
-        image: "tetet",
-    },
-]
+import { Detail } from '../../components/pages/Detail'
+import { PostData } from '../../lib/PostData'
+
 
 type ContextProps = {
     postData: any
@@ -33,12 +26,15 @@ export const getStaticProps = async (context) => {
     }
 }
 
-const DetailPage = ({postData}) => {
+export const DataContext = createContext({} as ContextProps)
+
+const DetailPage = ({ postData }) => {
     console.log(postData[0].image)
     return (
         <>
-        <p>{postData[0].image}</p>
-
+            <DataContext.Provider value={{postData}}>
+                <Detail />
+            </DataContext.Provider>
         </>
     )
 }

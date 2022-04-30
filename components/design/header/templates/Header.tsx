@@ -39,7 +39,7 @@ import React from 'react'
 
 const HeaderContaner = styled.header`
     position: fixed;
-    height: 100px;
+    height: 60px;
     width: 100%;
     z-index: 10;
     top:0;

@@ -4,8 +4,9 @@ import { ItemBottom } from '../../atoms/main/ItemBottom'
 import { ItemImage } from '../../atoms/main/ItemImage'
 
 const Wrapper = styled.div`
-    width:90%;
+    width:45%;
     background-color:#202020;
+    margin-bottom:50px;
 `
 const Inner = styled.div`
     padding:2%;
@@ -17,7 +18,7 @@ export const Item = ({data}) => {
     return (
         <Wrapper>
             <Inner>
-                    <ItemImage img={data.image} />
+                    <ItemImage img={data.img} />
                     <ItemBottom title={data.title} date={data.date}/>
             </Inner>
         </Wrapper>
