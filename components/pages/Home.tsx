@@ -3,7 +3,8 @@ import { PostData } from '../../lib/PostData'
 import { Item } from '../molcules/main/Item'
 
 const Container = styled.div`
-    margin-top: 200px;
+    margin-top: 60px;
+    padding: 50px 0 ;
     background-color:#3F3F3F;
 `
 const ListWrapper = styled.div`
