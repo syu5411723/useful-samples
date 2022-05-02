@@ -1,58 +1,27 @@
-﻿// import styled from 'styled-components'
-// import { ItemList } from '../molcules/main/ItemList'
-
-
-// const PostData = [
-//     {
-//         id: "1",
-//         title: "1",
-//         text: "1",
-//         image: "",
-//     },
-// ]
-
-// const Container = styled.div``
-// const ListWrapper = styled.div``
-
-// export const Home = () => {
-
-//     return (
-//         <Container>
-//             <ListWrapper>
-//                 {PostData.map(data => (
-//                     <div key={data.id}>
-//                         <ItemList data={data} />
-//                     </div>
-//                 ))}
-//             </ListWrapper>
-//         </Container>
-//     )
-// }
-
-import styled from 'styled-components'
+﻿import styled from 'styled-components'
+import { PostData } from '../../lib/PostData'
 import { Item } from '../molcules/main/Item'
-import { ItemList } from '../molcules/main/ItemList'
-
-const PostData = [
-    {
-        id: "1",
-        title: "1",
-        text: "1",
-        image: "",
-    },
-]
 
 const Container = styled.div`
     margin-top: 200px;
+    background-color:#3F3F3F;
 `
-const ListWrapper = styled.div``
+const ListWrapper = styled.div`
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+`
 
 
 export const Home = () => {
     return (
         <Container>
             <ListWrapper>
-                <Item data={PostData} />
+                {PostData.map(data => (
+                    <Item key={data.id} data={data} />
+                ))}
             </ListWrapper>
         </Container>
     )

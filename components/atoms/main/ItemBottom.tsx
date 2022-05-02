@@ -13,8 +13,12 @@ const Wrapper = styled.div`
 `
 const TextWrappe = styled.div``
 const IconhWrapper = styled.div``
-const Title = styled.p``
-const Date = styled.p``
+const Title = styled.p`
+    color: white;
+`
+const Date = styled.p`
+    color: #7E7E7E;
+`
 
 
 export const ItemBottom: VFC<Props> = ({ title, date }) => {
