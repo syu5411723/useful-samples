@@ -1,5 +1,6 @@
 ﻿import styled from 'styled-components'
 import { PostData } from '../../lib/PostData'
+import { pc, sp, tab } from '../design/Media'
 import { Item } from '../molcules/main/Item'
 
 const Container = styled.div`
@@ -13,6 +14,11 @@ const ListWrapper = styled.div`
     display: flex;
     justify-content:space-between;
     flex-wrap:wrap;
+    ${sp`
+
+    `}
+    ${tab ``}
+    ${pc ``}
 `
 
 

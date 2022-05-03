@@ -10,8 +10,6 @@ const Wrapper = styled.div`
     width:45%;
     background-color:#202020;
     margin-bottom:50px;
-
-
 `
 const Inner = styled.div`
     padding:3%;
