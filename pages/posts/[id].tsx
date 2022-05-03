@@ -29,12 +29,10 @@ export const getStaticProps = async (context) => {
 export const DataContext = createContext({} as ContextProps)
 
 const DetailPage = ({ postData }) => {
-    console.log(postData[0].image)
+    console.log(postData.id)
     return (
         <>
-            <DataContext.Provider value={{postData}}>
-                <Detail />
-            </DataContext.Provider>
+            <Detail />
         </>
     )
 }

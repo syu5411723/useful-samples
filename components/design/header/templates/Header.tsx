@@ -6,37 +6,6 @@ import { HeaderLogo } from "../atoms/HeaderLogo"
 import { MenuBG } from "../molcules/MenuBG"
 import { MenuToggle } from "../atoms/MenuToggle"
 
-// const Container = styled.header`
-//     position: fixed;
-//     height: 100px;
-//     width: 100%;
-//     z-index: 10;
-//     top:0;
-//     left:0;
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-// `
-// const Inner = styled.div`
-//     width: 96%;
-// `
-
-
-// export const Header = () => {
-
-//     return (
-//         <Container>
-//             <Inner>
-//                 <HeaderLogo />
-//                 <HeaderHumburger />
-//                 <MenuToggle isOpen={isOpen} toggle={toggle} />
-//                 <MenuBG isOpen={isOpen} />
-//             </Inner>
-//         </Container>
-//     )
-// }
-import React from 'react'
-
 const HeaderContaner = styled.header`
     position: fixed;
     height: 60px;
