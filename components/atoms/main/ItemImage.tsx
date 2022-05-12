@@ -25,8 +25,6 @@ const imageV = {
 }
 
 
-
-
 export const ItemImage: VFC<Props> = ({ img, isHover }) => {
     return (
         <Container>
