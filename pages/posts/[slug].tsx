@@ -1,5 +1,6 @@
 ﻿import React from 'react'
 import { createContext } from 'react'
+import { ChangeColor } from '../../components/pages/ChangeColor'
 import { InfinitLiquid } from '../../components/pages/InfinitLiquid'
 import { WavyCircle } from '../../components/pages/WavyCircle'
 // import { Detail } from '../../components/pages/Detail'
@@ -35,7 +36,8 @@ const DetailPage = ({ postData }) => {
         <>
             {/* <Detail /> */}
             {/* <InfinitLiquid /> */}
-            <WavyCircle />
+            {/* <WavyCircle /> */}
+            <ChangeColor />
         </>
     )
 }

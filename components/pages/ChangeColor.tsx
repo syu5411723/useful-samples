@@ -1,20 +1,27 @@
-﻿import react from 'react';
+﻿import react, { useState } from 'react';
 import styled from "styled-components"
 
 const randomColor = () => {
     return Math.floor(Math.random() * 255)
 }
-class ChangeColor = {
-    const style = {
-        background:`rgba('+${randomColor}', '+${randomColor}', '+${randomColor}' )`
-    }
+
+
+export const ChangeColor = () => {
+  const [color, setColor] = useState("")
+  const HandleClick = () => {
+    setColor(color => randomColor)
+  }
+  const Wrapper = styled.div`
+    width:100vw;
+    height:100vh;
+    background:rgba('+${randomColor}+', '+${randomColor}+', '+${randomColor}+');
+`
+
+  const 
     return (
-        <div
-            style={style}
-            onClick={this.randomColor}
+        <Wrapper
+            onClick={randomColor}
         >
-        </div>
+        </Wrapper>
     )
 }
-
-export default ChangeColor
