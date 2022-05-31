@@ -3,6 +3,7 @@ import { createContext } from 'react'
 import { ChangeColor } from '../../components/pages/ChangeColor'
 import { DrinkCard } from '../../components/pages/DrinkCard'
 import { Energy } from '../../components/pages/Energy'
+import { FingerScan } from '../../components/pages/FingerScan'
 import { InfinitLiquid } from '../../components/pages/InfinitLiquid'
 import { LiquidLoader } from '../../components/pages/LiquidLoader'
 import { WavyCircle } from '../../components/pages/WavyCircle'
@@ -43,7 +44,8 @@ const DetailPage = ({ postData }) => {
             {/* <ChangeColor /> */}
             {/* <DrinkCard /> */}
             {/* <Energy /> */}
-            <LiquidLoader />
+            {/* <LiquidLoader /> */}
+            <FingerScan />
         </>
     )
 }
