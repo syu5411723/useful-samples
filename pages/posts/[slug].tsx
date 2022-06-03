@@ -6,6 +6,7 @@ import { Energy } from '../../components/pages/Energy'
 import { FingerScan } from '../../components/pages/FingerScan'
 import { InfinitLiquid } from '../../components/pages/InfinitLiquid'
 import { LiquidLoader } from '../../components/pages/LiquidLoader'
+import { Scatter } from '../../components/pages/Scatter'
 import { WavyCircle } from '../../components/pages/WavyCircle'
 // import { Detail } from '../../components/pages/Detail'
 import { PostData } from '../../lib/PostData'
@@ -45,7 +46,8 @@ const DetailPage = ({ postData }) => {
             {/* <DrinkCard /> */}
             {/* <Energy /> */}
             {/* <LiquidLoader /> */}
-            <FingerScan />
+            {/* <FingerScan /> */}
+            <Scatter />
         </>
     )
 }
