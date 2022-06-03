@@ -1,8 +1,9 @@
 ﻿import styled, { keyframes } from "styled-components"
 
 type delayProps = {
-    d:number
+    d: number
 }
+const data = [0, 1, 2, 3, 4, 5, 6, 7]
 
 const Container = styled.div`
     display:flex;
@@ -73,20 +74,21 @@ export const LiquidLoader = () => {
             <Container>
                 <Text>Milk</Text>
                 <Loader>
-                    <LoaderSpan d={0} />
+                    {data.map(i => <LoaderSpan d={i} />)}
+                    {/* <LoaderSpan d={0} />
                     <LoaderSpan d={1} />
                     <LoaderSpan d={2} />
                     <LoaderSpan d={3} />
                     <LoaderSpan d={4} />
                     <LoaderSpan d={5} />
                     <LoaderSpan d={6} />
-                    <LoaderSpan d={7} />
+                    <LoaderSpan d={7} /> */}
                 </Loader>
             </Container>
-            <svg style={{width:0, height:0}}>
+            <svg style={{ width: 0, height: 0 }}>
                 <filter id="Gooey">
                     <feGaussianBlur in="SourceGraphic" stdDeviation="10" />
-                        <feColorMatrix values="
+                    <feColorMatrix values="
                             1 0 0 0 0
                             0 1 0 0 0
                             0 0 1 0 0
