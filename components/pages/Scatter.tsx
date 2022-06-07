@@ -15,11 +15,7 @@ const Container = styled.div`
     overflow:hidden;
     background-color:#001f25;
 `
-const Loader = styled.div`
-    position:relative;
-    width:300px;
-    height:300px;
-`
+
 const animate = keyframes`
     0% {
         transform: rotate(0deg);
@@ -59,8 +55,29 @@ const Span = styled.span<loaderProps>`
             -30px 30px 20px #00efff
             ;
         animation:${animate} 5s linear infinite;
-        animation-delay:calc(-0.25 * ${({ n }) => n});
+        animation-delay:calc(-0.25s * ${({ n }) => n});
         transform-origin:20px;
+        transition:2s;
+    }
+`
+const Loader = styled.div`
+    position:relative;
+    width:300px;
+    height:300px;
+    :hover ${Span} {
+        &:before {
+            transform-origin:250px;
+            box-shadow:0 0 20px #00efff,
+            -200px -200px 0 #00efff,
+            -200px -200px 20px #00efff,
+            200px 200px 0 #00efff,
+            200px 200px 20px #00efff,
+            200px -200px 0 #00efff,
+            200px -200px 20px #00efff,
+            -200px 200px 0 #00efff,
+            -200px 200px 20px #00efff
+            ;
+        }
     }
 `
 
