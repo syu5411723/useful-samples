@@ -15,7 +15,7 @@ import { WavyCircle } from '../../components/pages/WavyCircle'
 import { PostData } from '../../lib/PostData'
 
 
-type ContextProps = {
+type Context = {
     postData: any
 }
 export const getStaticPaths = async () => {

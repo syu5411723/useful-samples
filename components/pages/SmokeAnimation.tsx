@@ -52,6 +52,7 @@ const Span = styled.span<TextProps>`
     display: inline-block;
     animation:${animate} 1s linear forwards;
     &:nth-child(${({n}) => n}) {
+        animation-delay:${({delay}) => delay}s;
 
     }
 `
