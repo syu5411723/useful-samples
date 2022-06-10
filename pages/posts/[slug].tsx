@@ -1,13 +1,15 @@
 ﻿import React from 'react'
 import { createContext } from 'react'
+import { AnimatedBackground } from '../../components/pages/AnimatedBackground'
 import { ChangeColor } from '../../components/pages/ChangeColor'
 import { DrinkCard } from '../../components/pages/DrinkCard'
+import { Dropmorphism } from '../../components/pages/Dropmorphism'
 import { Energy } from '../../components/pages/Energy'
 import { FingerScan } from '../../components/pages/FingerScan'
 import { InfinitLiquid } from '../../components/pages/InfinitLiquid'
 import { LiquidLoader } from '../../components/pages/LiquidLoader'
-import { LogoBounce } from '../../components/pages/LogoBounce'
 import { Scatter } from '../../components/pages/Scatter'
+import { Smokeanimation } from '../../components/pages/Smokeanimation'
 import { WavyCircle } from '../../components/pages/WavyCircle'
 // import { Detail } from '../../components/pages/Detail'
 import { PostData } from '../../lib/PostData'
@@ -49,7 +51,9 @@ const DetailPage = ({ postData }) => {
             {/* <LiquidLoader /> */}
             {/* <FingerScan /> */}
             {/* <Scatter /> */}
-            <LogoBounce />
+            {/* <Dropmorphism /> */}
+            {/* <AnimatedBackground /> */}
+            <Smokeanimation />
         </>
     )
 }
