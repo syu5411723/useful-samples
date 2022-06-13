@@ -37,7 +37,7 @@ export const getStaticProps = async (context) => {
     }
 }
 
-export const DataContext = createContext({} as ContextProps)
+// export const DataContext = createContext({} as ContextProps)
 
 const DetailPage = ({ postData }) => {
     return (
