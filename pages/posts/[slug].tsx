@@ -54,9 +54,10 @@ const DetailPage = ({ postData }) => {
             {/* <Dropmorphism /> */}
             {/* <AnimatedBackground /> */}
             <Smokeanimation />
-            
+
         </>
     )
 }
 
 export default DetailPage
+    
