@@ -30,7 +30,7 @@ const EnergySpan = styled.span<ColorProps>`
     mix-blend-mode:plus-lighter;
     filter:blur(30px);
     animation: ${animate} 5s linear infinite;
-    width: ${({ color }) =>
+    width: ({ color }) =>
         color === 'yelow' && 'calc(300px + 18px)' ||
         color === 'bule' && 'calc(300px + 13px)' ||
         color === 'red' && 'calc(300px + 15px)' ||

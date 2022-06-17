@@ -15,7 +15,7 @@ import { WavyCircle } from '../../components/pages/WavyCircle'
 import { PostData } from '../../lib/PostData'
 
 
-type ContextProps = {
+type Context = {
     postData: any
 }
 export const getStaticPaths = async () => {
@@ -37,7 +37,7 @@ export const getStaticProps = async (context) => {
     }
 }
 
-export const DataContext = createContext({} as ContextProps)
+// export const DataContext = createContext({} as ContextProps)
 
 const DetailPage = ({ postData }) => {
     return (
@@ -54,6 +54,7 @@ const DetailPage = ({ postData }) => {
             {/* <Dropmorphism /> */}
             {/* <AnimatedBackground /> */}
             <Smokeanimation />
+            
         </>
     )
 }
