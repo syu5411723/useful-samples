@@ -5,7 +5,6 @@ import styled, { keyframes } from 'styled-components'
 type StyleProps = {
     n: number
     delay: number
-    AniDelay: number
 }
 const Container = styled.div`
     position:relative;
@@ -41,15 +40,13 @@ const Span = styled.span<StyleProps>`
     animation: ${Reveal} 2.5s linear forwards;
     opacity:0;
     filter: blur(13px);
-     &:nth-child(${({n}) => props.n})
+    animation-delay:${({ delay }) => delay}s;
 `
 const Video = styled.video`
-    width:80%;
     position: absolute;
+    width: 100vw;
     top:50%;
-    left:50%;
-    translate:translate(-50%, -50%);
-    display: flex;
+    transform:translateY(-50%);
 `
 
 export const Smokeanimation = () => {
@@ -57,12 +54,12 @@ export const Smokeanimation = () => {
         <Container>
             <Video src="/video/Tiny_Coding.mp4" autoPlay muted></Video>
             <Text>
-                <Span n={1} delay={} AniDelay={}>R</Span>
-                <Span n={2} delay={} AniDelay={}>E</Span>
-                <Span n={3} delay={} AniDelay={}>V</Span>
-                <Span n={4} delay={} AniDelay={}>E</Span>
-                <Span n={5} delay={} AniDelay={}>A</Span>
-                <Span n={6} delay={} AniDelay={}>L</Span>
+                <Span n={1} delay={0.3} >R</Span>
+                <Span n={2} delay={0.8} >E</Span>
+                <Span n={3} delay={1.3} >V</Span>
+                <Span n={4} delay={1.8} >E</Span>
+                <Span n={5} delay={2.3} >A</Span>
+                <Span n={6} delay={2.8} >L</Span>
             </Text>
         </Container>
     )
