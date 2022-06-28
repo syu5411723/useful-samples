@@ -11,6 +11,7 @@ const TextWrapper = styled.div`
     position:relative;
     width:100%;
     text-align:center;
+    filter:url(#fire);
 `
 const Text = styled.h2`
     position:relative;
@@ -27,17 +28,23 @@ const Text = styled.h2`
     ;
 `
 const SVG = styled.svg``
-const Filter = styled.filter``
+// const Filter = styled.filter``
 export const Fire = () => {
     return (
         <Container>
             <TextWrapper>
                 <Text>Fire</Text>
             </TextWrapper>
-            <SVG>
+            <svg>
+                <filter id="fire">
+                    <feTurbulence id="turbulence" baseFrequency="0.1 0.1" numOctaves="2" seed="3">
+                        <animate attributeName='baseFrequency' dur="5s" values="0.1 0.1;0.12 0.2" repeatCount="indefinite">
 
-            </SVG>
-
+                        </animate>
+                    </feTurbulence>
+                    <feDisplacementMap in="SourceGraphic" scale="20"></feDisplacementMap>
+                </filter>
+            </svg>
         </Container>
     )
 }
