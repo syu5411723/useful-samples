@@ -6,6 +6,7 @@ import { DrinkCard } from '../../components/pages/DrinkCard'
 import { Dropmorphism } from '../../components/pages/Dropmorphism'
 import { Energy } from '../../components/pages/Energy'
 import { FingerScan } from '../../components/pages/FingerScan'
+import { Fire } from '../../components/pages/Fire'
 import { InfinitLiquid } from '../../components/pages/InfinitLiquid'
 import { LiquidLoader } from '../../components/pages/LiquidLoader'
 import { Scatter } from '../../components/pages/Scatter'
@@ -53,11 +54,11 @@ const DetailPage = ({ postData }) => {
             {/* <Scatter /> */}
             {/* <Dropmorphism /> */}
             {/* <AnimatedBackground /> */}
-            <Smokeanimation />
+            {/* <Smokeanimation /> */}
+            <Fire />
 
         </>
     )
 }
 
 export default DetailPage
-    
