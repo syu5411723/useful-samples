@@ -43,7 +43,6 @@ export const WaveText = () => {
                 <Text>WATER</Text>
                 <Text>WATER</Text>
             </Wrapper>
-            
         </Container>
     )
 }
