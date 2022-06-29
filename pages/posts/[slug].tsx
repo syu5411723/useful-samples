@@ -11,6 +11,7 @@ import { InfinitLiquid } from '../../components/pages/InfinitLiquid'
 import { LiquidLoader } from '../../components/pages/LiquidLoader'
 import { Scatter } from '../../components/pages/Scatter'
 import { Smokeanimation } from '../../components/pages/Smokeanimation'
+import { WaveText } from '../../components/pages/WaveText'
 import { WavyCircle } from '../../components/pages/WavyCircle'
 // import { Detail } from '../../components/pages/Detail'
 import { PostData } from '../../lib/PostData'
@@ -55,7 +56,8 @@ const DetailPage = ({ postData }) => {
             {/* <Dropmorphism /> */}
             {/* <AnimatedBackground /> */}
             {/* <Smokeanimation /> */}
-            <Fire />
+            {/* <Fire /> */}
+            <WaveText />
 
         </>
     )
